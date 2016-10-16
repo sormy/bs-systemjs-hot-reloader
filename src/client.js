@@ -10,9 +10,9 @@
       throw new Error('BrowserSync SystemJS Hot Reloader: unable to find SystemJS');
     }
 
-    loader.import('systemjs-hot-reloader')
+    loader.import('systemjs-hot-reloader-ex')
       .catch(function (error) {
-        console.error('BrowserSync SystemJS Hot Reloader: unable to load module "systemjs-hot-reloader"');
+        console.error('BrowserSync SystemJS Hot Reloader: unable to load module "systemjs-hot-reloader-ex"');
         console.error(error.stack || error);
       })
       .then(function (exports) {
