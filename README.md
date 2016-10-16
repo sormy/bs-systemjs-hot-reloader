@@ -13,17 +13,23 @@
 
 ## TODO ##
 
-* tests
-* es2015+
+* Add tests
+* Use ES2015+
+* Reload assets
+* Better default error handler
+* Pass client side `systemjs-hot-reloader` options
+* Show BrowserSync notification on reload
 
 ## Installation ##
 
 ```shell
 npm install browser-sync bs-systemjs-hot-reloader --save-dev
-jspm install github:sormy/systemjs-hot-reloader --dev
+jspm install npm:systemjs-hot-reloader-ex --dev
 ```
 
 ## Usage ##
+
+Please refer to `systemjs-hot-reloader` usage to setup client side reloader.
 
 This example will hot reload `*.scss` and `*.jsx` and will do full reload for
 `index.html` and `jspm.config.js`.
