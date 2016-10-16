@@ -11,6 +11,11 @@
 * Designed to be used together with `BrowserSync`, `JSPM`, `SystemJS` and
   `github:sormy/systemjs-hot-reloader`
 
+## TODO ##
+
+* tests
+* es2015+
+
 ## Installation ##
 
 ```shell
