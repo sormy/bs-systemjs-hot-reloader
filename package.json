@@ -1,6 +1,6 @@
 {
   "name": "bs-systemjs-hot-reloader",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "BrowserSync SystemJS / JSPM hot reload plugin with support of CSS, SCSS, SASS, LESS, Stylus, React and JavaScript",
   "main": "index.js",
   "keywords": [

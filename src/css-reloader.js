@@ -228,7 +228,6 @@ CssReloader.prototype.urlToPath = function (url) {
 };
 
 CssReloader.prototype.resolveJspmPath = function (jspmPath) {
-  console.log(this.loader);
   return this.urlToPath(this.loader.normalizeSync(jspmPath));
 };
 
