@@ -1,0 +1,42 @@
+{
+  "name": "bs-systemjs-hot-reloader",
+  "version": "2.0.0",
+  "description": "BrowserSync SystemJS / JSPM hot reload plugin with support of CSS, SCSS, SASS, LESS, Stylus, React and JavaScript",
+  "main": "index.js",
+  "keywords": [
+    "BrowserSync",
+    "SystemJS",
+    "JSPM",
+    "plugin",
+    "hot",
+    "reload",
+    "CSS",
+    "SCSS",
+    "SASS",
+    "LESS",
+    "Stylus",
+    "React",
+    "JavaScript"
+  ],
+  "author": "Artem Butusov <art.sormy@gmail.com>",
+  "homepage": "https://github.com/sormy/bs-systemjs-hot-reloader",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sormy/bs-systemjs-hot-reloader"
+  },
+  "bugs": {
+    "url": "https://github.com/sormy/bs-systemjs-hot-reloader/issues"
+  },
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-airbnb": "^12.0.0"
+  },
+  "dependencies": {
+    "core-js": "^2.4.1",
+    "progeny": "^0.10.0"
+  },
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

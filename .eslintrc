@@ -1,0 +1,21 @@
+{
+  "extends": "airbnb/base",
+  "rules": {
+    "no-var": 0,
+    "import/no-dynamic-require": 0,
+    "global-require": 0,
+    "dot-notation": 0,
+    "vars-on-top": 0,
+    "prefer-arrow-callback": 0,
+    "func-names": 0,
+    "no-console": 0,
+    "no-underscore-dangle": 0,
+    "object-shorthand": 0,
+    "prefer-template": 0,
+    "wrap-iife": ["error", "any"]
+  },
+  "globals": {
+    "SystemJS": false,
+    "System": false
+  }
+}
