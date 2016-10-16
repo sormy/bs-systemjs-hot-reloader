@@ -8,11 +8,6 @@ var progeny = require('progeny');
 var CssReloader = function (options) {
   var opts = options || {};
 
-  if (!SystemJS && !System) {
-    this.loadSystemJS();
-  }
-
-  this.loader = opts.loader || SystemJS || System;
   this.jspmPrefix = opts.jspmPrefix || /^(jspm:)/;
   this.npmPrefix = opts.npmPrefix || /^(~|npm:)/;
   this.nodeModulesDir = opts.nodeModulesDir || 'node_modules';
@@ -29,6 +24,15 @@ var CssReloader = function (options) {
   this.jspmConfigFile = opts.jspmConfigFile || path.join(this.jspmRootDir, 'jspm.config.js');
   this.systemPath = opts.systemPath || path.join(this.jspmPackagesDir, 'system.js');
   this.debug = opts.debug || false;
+
+  if (!opts.loader
+    && !(global.SystemJS && global.SystemJS.import)
+    && !(global.System && global.System.import)
+  ) {
+    this.loadSystemJS();
+  }
+
+  this.loader = opts.loader || global.SystemJS || global.System;
 
   this.entries = {};
 };
@@ -224,6 +228,7 @@ CssReloader.prototype.urlToPath = function (url) {
 };
 
 CssReloader.prototype.resolveJspmPath = function (jspmPath) {
+  console.log(this.loader);
   return this.urlToPath(this.loader.normalizeSync(jspmPath));
 };
 

@@ -19,7 +19,7 @@
 ## Installation ##
 
 ```shell
-npm install bs-systemjs-hot-reloader --save-dev
+npm install browser-sync bs-systemjs-hot-reloader --save-dev
 ```
 
 ## Usage ##

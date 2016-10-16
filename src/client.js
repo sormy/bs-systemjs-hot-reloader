@@ -4,7 +4,7 @@
   var socket = bs.socket;
 
   socket.on('system:reload', function (data) {
-    var loader = SystemJS || System;
+    var loader = window.SystemJS || window.System;
 
     if (!loader) {
       throw new Error('BrowserSync SystemJS Hot Reloader: unable to find SystemJS');
