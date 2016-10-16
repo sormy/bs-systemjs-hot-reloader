@@ -20,6 +20,7 @@
 
 ```shell
 npm install browser-sync bs-systemjs-hot-reloader --save-dev
+jspm install github:sormy/systemjs-hot-reloader --dev
 ```
 
 ## Usage ##
