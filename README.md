@@ -68,7 +68,7 @@ bs.init({
   * `jspmPrefix` - JSPM prefix RegExp which could be used in CSS files to refer
     relative to JSPM imports, default to `jspm:`
   * `npmPrefix`- NPM prefix RegExp which could be used in CSS files to refer
-    relative to NPM imports, default to `jspm:`
+    relative to NPM imports, default to `npm:`
   * `nodeModulesDir` - `node_modules` path, default to `node_modules`
   * `supportsRegExp` - RegExp for supported filenames, default to
     `/\.(scss|sass|less|styl|css)$/`
