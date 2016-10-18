@@ -62,6 +62,13 @@ bs.init({
 
 ## Options ##
 
+* `resolver` - `function (reloadFilename, sourceFilename) { return newFilename }`,
+  not set by default. Custom resolver, which allow to send alternative filename
+  to client side, for example, on `src/module.js` change you could send
+  `dist/modules.js` to client side.
+  If function returns `true` or `undefined` then original filename will be used.
+  If function returns `false` then file change event will not be emitted to client.
+  Otherwise file change event will be emitted with returned by function value.
 * `files` - standard BrowserSync plugin option to enable watch for changes
 * `cssReloader` - css reloader options, pass `false` to disable
   * `loader` - instance of SystemJS, default to `SystemJS` or `System`
