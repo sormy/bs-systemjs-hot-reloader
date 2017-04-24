@@ -1,5 +1,7 @@
 # BrowserSync SystemJS Hot Reloader #
 
+**This plugin is compatible with hot reloader which is compatible with SystemJS v0.19.x only for now**
+
 ## Features ##
 
 * BrowserSync plugin to watch file for changes and deliver events to
