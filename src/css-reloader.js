@@ -38,7 +38,7 @@ var CssReloader = function (options) {
 };
 
 CssReloader.prototype.loadSystemJS = function () {
-  require(path.resolve(this.systemPath));
+  global.System = global.SystemJS = require(path.resolve(this.systemPath));
   require(path.resolve(this.jspmConfigFile));
 };
 
